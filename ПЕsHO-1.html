@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моето Портфолио</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 15px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+
+        section {
+            padding: 60px 20px;
+        }
+
+        #home {
+            background: linear-gradient(135deg, #3498db, #8e44ad);
+            color: #fff;
+            text-align: center;
+            padding: 120px 20px;
+        }
+
+        #home h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            animation: fadeInDown 1s ease;
+        }
+
+        #home p {
+            font-size: 24px;
+        }
+
+        #about, #cv, #portfolio, #contact {
+            background: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            padding: 40px;
+            transition: transform 0.3s ease;
+        }
+
+        #about:hover, #cv:hover, #portfolio:hover, #contact:hover {
+            transform: translateY(-10px);
+        }
+
+        .projects {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .project {
+            border: 1px solid #ddd;
+            background: #f9f9f9;
+            padding: 20px;
+            width: 30%;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        /* Анимации */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Навигация -->
+    <nav>
+        <ul>
+            <li><a href='#home'>Начало</a></li>
+            <li><a href='#about'>За мен</a></li>
+            <li><a href='#cv'>CV</a></li>
+            <li><a href='#portfolio'>Портфолио</a></li>
+            <li><a href='#contact'>Контакти</a></li>
+        </ul>
+    </nav>
+
+    <!-- Начална страница -->
+    <section id="home">
+        <h1>Добре дошли в моето портфолио!</h1>
+        <p>Аз съм Борис Христов Маринов, уеб разработчик и дизайнер.</p>
+    </section>
+
+    <!-- За мен -->
+    <section id="about">
+        <h2>За мен</h2>
+        <p>Аз съм Борис Христов Маринов, ентусиазиран разработчик с опит в създаването на уеб и софтуерни приложения.</p>
+        <p>Имам опит в следните технологии: HTML, C# и други.</p>
+    </section>
+
+    <!-- CV -->
+    <section id="cv">
+        <h2>Моето CV</h2>
+        <p>Можете да изтеглите моето CV като PDF <a href='' download>тук</a>.</p>
+        <h3>Опит</h3>
+        <ul>
+            <li>Разработчик на уеб приложения в A Data Pro (2019 - 2021)</li>
+            <li>Софтуерен инженер в A Data Pro (2021 - до момента)</li>
+        </ul>
+        <h3>Образование</h3>
+        <ul>
+            <li>Бакалавър по Компютърни науки, СофтУни</li>
+        </ul>
+    </section>
+
+    <!-- Портфолио -->
+    <section id="portfolio">
+        <h2>Портфолио</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Проект 1</h3>
+                <p>RentCar.</p>
+                <a href=''>https://github.com/boro33/RentCar</a>
+            </div>
+            <div class="project">
+                <h3>Проект 2</h3>
+                <p>Event-Ticketing-Platform.</p>
+                <a href=''>https://github.com/boro33/Event-Ticketing-Platform</a>
+            </div>
+            <div class="project">
+                <h3>Проект 3</h3>
+                <p>DoctorAppointments.</p>
+                <a href=''>https://github.com/boro33/DoctorAppointments</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакти -->
+    <section id="contact">
+        <h2>Контакти</h2>
+        <p>Можете да се свържете с мен чрез следните канали:</p>
+        <ul>
+            <li>Email: <a href=''>borismarinov917@gmail.com
+            </a></li>
+            <li>GitHub: <a href="https://github.com/BM33let?tab=repositories" target="_blank">Профил в GitHub</a></li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Борис Христов Маринов. Всички права запазени.</p>
+    </footer>
+</body>
+</html>
